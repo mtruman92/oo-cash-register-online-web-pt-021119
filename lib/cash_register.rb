@@ -20,7 +20,7 @@ end
     if discount == 0 
       "There is no discount to apply."
     else
-      self.total = (total * ((100.0 - discount.to_f)/100)).to_i
+      @total -= @total * @discount / 100
       "After the discount, the total comes to $#{self.total}."
     end
   end
