@@ -20,7 +20,7 @@ if @discount > 0
 @total == (@price*@discount / 100)
 @total -=@total * @discount / 100
 self.total == 0 ? 
-return "After the discount, the total comes to $#{total}."
+return: "After the discount, the total comes to $#{total}."
  else
    return "There is no discount to apply."
  end
